@@ -23,10 +23,16 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/bower_components',  express.static(__dirname + '/bower_components'));
-app.use('/',index);
-app.get('*', function (req, res) {
-    res.sendFile(__dirname+'/public/index.html');
-});
+// app.use(index);
+app.get('/', function(req, res) {
+        res.sendfile('./public/index.html'); // load the single view file (angular will handle the page changes on the front-end)
+    });
+app.get('*', function(req, res) {
+        res.sendfile('./public/index.html'); // load the single view file (angular will handle the page changes on the front-end)
+    });
+// app.get('*', function (req, res) {
+//     res.sendFile(__dirname+'/public/index.html');
+// });
 // app.use('/users', users);
 
 // catch 404 and forward to error handler
