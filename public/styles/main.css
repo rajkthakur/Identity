@@ -1,0 +1,114 @@
+body {
+  font-family: 'Tangerine', serif;
+  text-shadow: 4px 4px 4px #aaa;
+  color:inherit;
+  padding: 0;
+  overflow: hidden;
+}
+.row{
+	margin:0;
+}
+#logo{
+	font-size: 48px;
+	text-shadow: 4px 4px 4px #aaa;
+	 filter: invert(100%);
+}
+.navbar{
+	margin-bottom:0;
+}
+.container-fluid{
+	padding: 0;
+}
+.flex-container{
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	padding: 0;
+}
+.main-menu-flex-container{
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column-reverse;
+}
+.home{
+	background-image: url("/images/IMG_69996.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	height: calc(100vh - 150px);
+	flex-shrink:1;
+	-webkit-transition: all 0.8s ease-in-out;
+  	-moz-transition: all 0.8s ease-in-out;
+  	transition: all 0.8	s ease-in-out
+}
+.shrink{
+	height: calc(100vh - 405px);
+}
+.menu-flex-container{
+	display: -webkit-flex;
+	display: inline-flex|flex;
+	flex-direction: row;
+	-webkit-justify-content: space-around;
+    justify-content: space-around;
+    width:100%;
+}
+.menu-flex-inner-item{
+	background-color: rgba(0,0,0, 0.24);
+	height:120px;
+	width:120px;
+	border: 5px solid transparent;
+	-webkit-box-shadow: 4px 4px 20px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 20px 3px rgba(0,0,0,0.75);
+    box-shadow: 4px 4px 20px 3px rgba(0,0,0,0.75);
+	border-radius: 50%;
+	text-align: center;
+	flex-grow:1;
+	cursor: pointer;
+}
+.menu-flex-inner-item > i {
+	display: inline-block;
+	font-size: 84px;
+	
+}
+.menu-flex-item{
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column-reverse;
+	-webkit-align-items:center;
+	align-items:center;
+	margin-top: 1px;
+	height:180px;
+}
+.vertical-line{
+	width:5px;
+	-webkit-box-shadow: 4px 4px 20px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 20px 3px rgba(0,0,0,0.75);
+    box-shadow: 4px 4px 20px 3px rgba(0,0,0,0.75);
+	height:60px;
+}
+.horizontal-line{
+	height:2px;
+	background-color: transparent;
+	-webkit-box-shadow: 1px 2px 4px 1px #111;
+	width:100%;
+}
+.profile-picture{
+	height:200px;
+	width: 200px;
+	border:5px solid transparent;
+	-webkit-box-shadow: 4px 4px 20px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 20px 3px rgba(0,0,0,0.75);
+    box-shadow: 4px 4px 20px 3px rgba(0,0,0,0.75);
+	border-radius: 50%;
+	background-image: url("/images/raj.jpg");
+	background-size: cover;
+	scale=1.5;
+	margin-top: -50px;
+	cursor: pointer;
+}
+.profile-picture-flex-container{
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column-reverse;
+	align-items: center;
+}
